@@ -1,4 +1,4 @@
-FROM armck/dotnet:latest
+FROM ghcr.io/armckinney/dotnet:latest
 
 LABEL   deployable="false" \
         decription="This is the development version of the application container. \

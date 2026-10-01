@@ -55,7 +55,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     container:
-      image: armck/template-dotnet:${{ github.sha }}
+      image: ghcr.io/armckinney/template-dotnet:${{ github.sha }}
       credentials:
         username: ${{ secrets.DOCKER_HUB_ID }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
@@ -72,7 +72,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     container:
-      image: armck/template-dotnet:${{ github.sha }}
+      image: ghcr.io/armckinney/template-dotnet:${{ github.sha }}
       credentials:
         username: ${{ secrets.DOCKER_HUB_ID }}
         password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
